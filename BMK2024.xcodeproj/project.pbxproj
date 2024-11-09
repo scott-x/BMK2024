@@ -14,6 +14,13 @@
 		D2244A5B2CDEA57800E87D6C /* BMK2024Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2244A5A2CDEA57800E87D6C /* BMK2024Tests.swift */; };
 		D2244A652CDEA57800E87D6C /* BMK2024UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2244A642CDEA57800E87D6C /* BMK2024UITests.swift */; };
 		D2244A672CDEA57800E87D6C /* BMK2024UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2244A662CDEA57800E87D6C /* BMK2024UITestsLaunchTests.swift */; };
+		D2244A742CDEA70000E87D6C /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = D2244A732CDEA70000E87D6C /* location.json */; };
+		D2244A762CDEA76000E87D6C /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2244A752CDEA76000E87D6C /* util.swift */; };
+		D2244A782CDEA77D00E87D6C /* FileSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2244A772CDEA77D00E87D6C /* FileSearch.swift */; };
+		D2244A7A2CDEA8E400E87D6C /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2244A792CDEA8E400E87D6C /* global.swift */; };
+		D2244A812CDEF25900E87D6C /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = D2244A802CDEF25900E87D6C /* SQLite */; };
+		D2244A832CDEF27A00E87D6C /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2244A822CDEF27A00E87D6C /* db.swift */; };
+		D2244A8C2CDFF41000E87D6C /* bmk.db in Resources */ = {isa = PBXBuildFile; fileRef = D2244A8B2CDFF41000E87D6C /* bmk.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,12 @@
 		D2244A602CDEA57800E87D6C /* BMK2024UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMK2024UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2244A642CDEA57800E87D6C /* BMK2024UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMK2024UITests.swift; sourceTree = "<group>"; };
 		D2244A662CDEA57800E87D6C /* BMK2024UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMK2024UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2244A732CDEA70000E87D6C /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = location.json; path = ../../Desktop/location.json; sourceTree = "<group>"; };
+		D2244A752CDEA76000E87D6C /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		D2244A772CDEA77D00E87D6C /* FileSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearch.swift; sourceTree = "<group>"; };
+		D2244A792CDEA8E400E87D6C /* global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
+		D2244A822CDEF27A00E87D6C /* db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
+		D2244A8B2CDFF41000E87D6C /* bmk.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = bmk.db; path = ../../bmk.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2244A812CDEF25900E87D6C /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +89,8 @@
 		D2244A3C2CDEA57600E87D6C = {
 			isa = PBXGroup;
 			children = (
+				D2244A8B2CDFF41000E87D6C /* bmk.db */,
+				D2244A732CDEA70000E87D6C /* location.json */,
 				D2244A472CDEA57600E87D6C /* BMK2024 */,
 				D2244A592CDEA57800E87D6C /* BMK2024Tests */,
 				D2244A632CDEA57800E87D6C /* BMK2024UITests */,
@@ -100,6 +116,10 @@
 				D2244A4C2CDEA57700E87D6C /* Assets.xcassets */,
 				D2244A512CDEA57700E87D6C /* BMK2024.entitlements */,
 				D2244A4E2CDEA57700E87D6C /* Preview Content */,
+				D2244A752CDEA76000E87D6C /* util.swift */,
+				D2244A822CDEF27A00E87D6C /* db.swift */,
+				D2244A772CDEA77D00E87D6C /* FileSearch.swift */,
+				D2244A792CDEA8E400E87D6C /* global.swift */,
 			);
 			path = BMK2024;
 			sourceTree = "<group>";
@@ -145,6 +165,9 @@
 			dependencies = (
 			);
 			name = BMK2024;
+			packageProductDependencies = (
+				D2244A802CDEF25900E87D6C /* SQLite */,
+			);
 			productName = BMK2024;
 			productReference = D2244A452CDEA57600E87D6C /* BMK2024.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +240,9 @@
 				Base,
 			);
 			mainGroup = D2244A3C2CDEA57600E87D6C;
+			packageReferences = (
+				D2244A7F2CDEF25900E87D6C /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = D2244A462CDEA57600E87D6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2244A8C2CDFF41000E87D6C /* bmk.db in Resources */,
 				D2244A502CDEA57700E87D6C /* Preview Assets.xcassets in Resources */,
+				D2244A742CDEA70000E87D6C /* location.json in Resources */,
 				D2244A4D2CDEA57700E87D6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2244A762CDEA76000E87D6C /* util.swift in Sources */,
+				D2244A832CDEF27A00E87D6C /* db.swift in Sources */,
+				D2244A782CDEA77D00E87D6C /* FileSearch.swift in Sources */,
 				D2244A4B2CDEA57600E87D6C /* ContentView.swift in Sources */,
 				D2244A492CDEA57600E87D6C /* BMK2024App.swift in Sources */,
+				D2244A7A2CDEA8E400E87D6C /* global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,19 +453,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BMK2024/BMK2024.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BMK2024/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "BMK2024/Preview\\ Content ../../bmk.db";
+				DEVELOPMENT_TEAM = 3Y8ZM8MS8G;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = bmk2025;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-xiong.BMK2024";
+				PRODUCT_BUNDLE_IDENTIFIER = "Com.scott-xiong";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,19 +483,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BMK2024/BMK2024.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BMK2024/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "BMK2024/Preview\\ Content ../../bmk.db";
+				DEVELOPMENT_TEAM = 3Y8ZM8MS8G;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = bmk2025;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-xiong.BMK2024";
+				PRODUCT_BUNDLE_IDENTIFIER = "Com.scott-xiong";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -573,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2244A7F2CDEF25900E87D6C /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2244A802CDEF25900E87D6C /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2244A7F2CDEF25900E87D6C /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2244A3D2CDEA57600E87D6C /* Project object */;
 }

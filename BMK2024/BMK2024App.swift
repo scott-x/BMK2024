@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct BMK2024App: App {
+    init(){
+        initDB()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

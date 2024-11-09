@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+  <dict>
+    <key>method</key>
+    <string>app-store</string> <!-- or ad-hoc, development, etc. -->
+    <key>uploadSymbols</key>
+    <true/>
+    <key>teamID</key>
+    <string>YOUR_ACTUAL_TEAM_ID</string> <!-- Replace with your actual Team ID -->
+    <key>signingStyle</key>
+    <string>automatic</string> <!-- or 'manual' if you're using a custom certificate -->
+    <key>signingCertificate</key>
+    <string>Mac Development</string> <!-- Ensure this matches the certificate in your keychain -->
+    <key>provisioningProfileSpecifier</key>
+    <string>Your Provisioning Profile Name</string> <!-- Optional if manual signing -->
+  </dict>
+</plist>
